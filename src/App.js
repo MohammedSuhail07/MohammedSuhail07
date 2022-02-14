@@ -17,7 +17,7 @@ class App extends Component {
 
   handleFormSubmit = (e) => {
     e.preventDefault();
-
+    
     let items = [...this.state.items];
 
     items.push({
