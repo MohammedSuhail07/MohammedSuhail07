@@ -19,7 +19,7 @@ class Form extends React.Component {
             onChange={this.props.handleInputChange} />
           </label><br/>
           <label for="Age">
-          Age:
+          Age :    
           <input id="Age" value={this.props.newAge} 
             type="number"  name="Age"
             onChange={this.props.handleInputChange} />
