@@ -43,6 +43,15 @@ class App extends Component {
       [name]: value
     })
   };
+  resetForm = () => {
+    this.setState({FirstName:"", LastName: "",Age:""});
+  }
+  maxLengthCheck = (object) => {
+    if (object.target.value.length > object.target.maxLength) {
+     object.target.value = object.target.value.slice(0, object.target.maxLength)
+      }
+    }
+
 
   render() {
     return (
@@ -50,6 +59,7 @@ class App extends Component {
         
         <Form handleFormSubmit={ this.handleFormSubmit } 
           handleInputChange={ this.handleInputChange }
+          resetForm={this.resetForm}
           newFirstName={ this.state.FirstName }
           newLastName={ this.state.LastName }
           newAge={this.state.Age} />

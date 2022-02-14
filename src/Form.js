@@ -9,22 +9,23 @@ class Form extends React.Component {
           <label htmlFor="FirstName">
           FirstName:
           <input id="FirstName" value={this.props.newFirstName} 
-            type="text" name="FirstName"
+            type="text" maxLength={10} onInput={this.maxLengthCheck} name="FirstName"
             onChange={this.props.handleInputChange} />
           </label><br/>
           <label for="LastName">
           LastName:
           <input id="LastName" value={this.props.newLastName} 
-            type="LastName" name="LastName"
+            type="text" maxLength={10} onInput={this.maxLengthCheck} name="LastName"
             onChange={this.props.handleInputChange} />
           </label><br/>
           <label for="Age">
           Age:
           <input id="Age" value={this.props.newAge} 
-            type="Age" name="Age"
+            type="number"  name="Age"
             onChange={this.props.handleInputChange} />
           </label><br/>
           <button type="submit" value="Submit">Add Item</button>
+          <button type="reset"  value="reset"onClick={this.props.resetForm}>Reset </button>
         </form>
       </div>
     );
