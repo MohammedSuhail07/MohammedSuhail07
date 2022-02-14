@@ -21,7 +21,7 @@ class Form extends React.Component {
           <label for="Age">
           Age :    
           <input id="Age" value={this.props.newAge} 
-            type="number"  name="Age"
+            type="number" max="100" name="Age"
             onChange={this.props.handleInputChange} />
           </label><br/>
           <button type="submit" value="Submit">Add Item</button>
