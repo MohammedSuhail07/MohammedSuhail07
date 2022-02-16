@@ -65,7 +65,7 @@ class App extends Component {
           newAge={this.state.Age} />
           {this.state.items.length>0 && <>
           <Table items={ this.state.items }/></>}
-          {this.state.items.length<1 && <div>Add Data</div>}
+          {/* {this.state.items.length<1 && <div>Add Data</div>} */}
       </div>
     );
   }

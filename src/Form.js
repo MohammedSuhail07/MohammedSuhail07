@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Form.css';
 
 class Form extends React.Component {
   render() {
@@ -25,8 +26,8 @@ class Form extends React.Component {
             onChange={this.props.handleInputChange} /></p>
           </label><br/><br/>
           
-          <button type="submit" value="Submit">Add Item</button> &nbsp;&nbsp;&nbsp;
-          <button type="reset"  value="reset"onClick={this.props.resetForm}>Reset </button><br/><br/>
+          <button className="button" type="submit" value="Submit">Add Item</button> &nbsp;&nbsp;&nbsp;
+          <button className="button" type="reset"  value="reset"onClick={this.props.resetForm}>Reset </button><br/><br/>
         </form>
       </div>
     );
